@@ -17,21 +17,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val buttonSearch = findViewById<MaterialButton>(R.id.search_button)
-        buttonSearch.setOnClickListener {
+        val searchArea = findViewById<View>(R.id.search_area)
+        searchArea.setOnClickListener {
             val searchIntent = Intent(this@MainActivity, SearchActivity::class.java)
             startActivity(searchIntent)
         }
 
-
-        val buttonLibrary = findViewById<MaterialButton>(R.id.library_button)
-        buttonLibrary.setOnClickListener {
+        val libraryArea = findViewById<View>(R.id.library_area)
+        libraryArea.setOnClickListener {
             val libraryIntent = Intent(this@MainActivity, LibraryActivity::class.java)
             startActivity(libraryIntent)
         }
 
-        val buttonSettings = findViewById<MaterialButton>(R.id.settings_button)
-        buttonSettings.setOnClickListener {
+        val settingsArea = findViewById<View>(R.id.settings_area)
+        settingsArea.setOnClickListener {
             val settingsIntent = Intent(this@MainActivity, SettingsActivity::class.java)
             startActivity(settingsIntent)
         }

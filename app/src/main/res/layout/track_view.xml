@@ -29,7 +29,7 @@
             android:maxLines="1"
             android:textFontWeight="400"
             android:textSize="@dimen/text_in_settings_16sp"
-            tools:text="здесь будет какое то название" />
+            tools:text="Какое то название" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -46,7 +46,7 @@
                 android:ellipsize="end"
                 android:maxLines="1"
                 app:drawableEndCompat="@drawable/ic_dot"
-                tools:text="здесь будет какой-то исполнитель " />
+                tools:text="Какой-то исполнитель " />
 
             <TextView
                 android:id="@+id/trackTime"
